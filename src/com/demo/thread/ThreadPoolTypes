@@ -1,0 +1,4 @@
+Fixed Thread Pool : blocking queue : Executors.newFixedThreadPool()
+Cached Thread Pool : synchronous queue : Executors.newCachedThreadPool();
+Scheduled Thread Pool : Delayed Queue : scheduleAtFixedRate , scheduleAtFixedDelay
+SingleThreadedExecutor Thread Pool : only one blocking queue : Threadpool 1 : Executors.newFixedThreadPool(1)
