@@ -1,4 +1,4 @@
-package com.demo;
+package com.demo.vola_tile;
 public class VolatileData   
 {  
 	private volatile int counter = 0;   

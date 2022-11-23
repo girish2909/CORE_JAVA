@@ -1,4 +1,4 @@
-package com.demo;
+package com.java8.features;
 
 import java.util.Arrays;
 
