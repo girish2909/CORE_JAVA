@@ -1,0 +1,1 @@
+Creation design pattern provides to create object with various possible methods/ways.

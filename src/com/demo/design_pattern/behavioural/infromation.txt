@@ -1,0 +1,3 @@
+Provides solutions for the data interacts within objects and how to provide loose coupling.
+
+Provides easy communication / looose coupling between Two classes or interfaces.  

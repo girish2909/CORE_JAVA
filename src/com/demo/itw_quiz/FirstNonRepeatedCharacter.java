@@ -1,0 +1,30 @@
+package com.demo.itw_quiz;
+
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.Collectors;
+
+public class FirstNonRepeatedCharacter {
+
+  public static void main(String[] args) {
+
+    System.out.println("Please  enter  the  input  string  :");
+    Scanner in = new Scanner(System.in); // read from System input
+    String input_string = in.nextLine();
+    Character firstNonRepeatedChar = logic(input_string);
+    System.out.println("The  first  non  repeated  character  is  :    " + firstNonRepeatedChar);
+    in.close();
+  }
+
+  private static Character logic(String input) {  
+        Character result =  input.chars().filter( value -> value != ' ')     //string stream
+             .mapToObj(i -> Character.toLowerCase(Character.valueOf((char)i))) //convert to lowercase & then to Character object
+             .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting())) //store in a map with the count
+             .entrySet().stream()
+             .filter(entry ->  entry.getValue() == 1L)
+             .map(entry -> entry.getKey())
+             .findFirst().get();
+        
+         return result;    
+  }
+}

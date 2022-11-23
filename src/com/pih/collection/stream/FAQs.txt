@@ -1,0 +1,5 @@
+1. Print employee details working in each department.
+2. Print employees count working in each department.
+3. Print active and inactive employees in the given collection.
+4. Print min max employee salary from given collection.
+5. Print the max salary of an employee from each department.
